@@ -29,11 +29,14 @@ void quickSort(int l, int r) {
     }
 }
 int main() {
-    auto starttime = high_resolution_clock::now();
-    ifstream fi(filename);
-    for (int i = 0; i < n; ++i) fi >> a[i];
-    quickSort(0, n-1);
-    auto finishtime = high_resolution_clock::now();
-    cout << duration_cast<microseconds>(finishtime - starttime).count();
+    for (int Test = 1; Test <= 10; ++Test) {
+        string filename = "input/test" + to_string(Test) + ".inp";
+        ifstream fi(filename);
+        for (int i = 0; i < n; ++i) fi >> a[i];
+        auto starttime = high_resolution_clock::now();
+        quickSort(0, n-1);
+        auto finishtime = high_resolution_clock::now();
+        cout << duration_cast<microseconds>(finishtime - starttime).count() <<'\n';
+    }
     return 0;
 }
