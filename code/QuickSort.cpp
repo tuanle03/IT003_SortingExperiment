@@ -2,7 +2,6 @@
 using namespace std;
 using namespace std::chrono;
 const int n = 1000000;
-const string filename = "test10.inp";
 int a[1000005];
 int partition(int l, int r) {
     int pivot = a[r];
