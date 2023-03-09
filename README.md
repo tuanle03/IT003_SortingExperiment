@@ -12,6 +12,5 @@ Repository chứa file báo cáo kết quả thực nghiệm (pdf) và hai thư 
 ## Thực hiện thí nghiệm
 Để thực hiện thí nghiệm, bạn cần cài đặt C++ trên máy tính của mình. Làm theo các bước sau:
 1. Sao chép repository vào máy tính của bạn.
-2. Di chuyển đến thư mục mã nguồn **code**
-3. Chạy tệp thí nghiệm: python experiment.py
-Tệp thí nghiệm sẽ chạy mỗi thuật toán sắp xếp trên từng tập dữ liệu và đầu ra thời gian chạy cho mỗi kết hợp thuật toán và tập dữ liệu.
+2. Mở thư mục **code**, chạy file code của thuật toán cần thí nghiệm. Dữ liệu đầu ra gồm 10 dòng tương ứng với thời gian mà thuật toán đó sắp xếp 10 bộ dữ liệu.
+
